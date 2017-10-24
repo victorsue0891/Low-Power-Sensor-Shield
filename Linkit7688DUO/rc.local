@@ -1,0 +1,9 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+#!/bin/sh -e
+mount /dev/mmcblk0p1 /mnt/sdcard
+amixer -c 1 sset Mic,0 80%
+#sh /root/_wifi-script/shutdown_WiFi.sh
+#sh /root/record.sh
+
+exit 0
